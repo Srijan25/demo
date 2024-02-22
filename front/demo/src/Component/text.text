@@ -1,0 +1,31 @@
+
+<div  id='content' style={{display: 'none'}}>
+          <h1 style={{ textAlign: 'center', marginTop: '20px' }}>Report </h1>
+          <image src={downloadimage} alt="download" />
+          <div className="data">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Accounts</td>
+                  <td>{databyid.accounts}</td>
+                </tr>
+                <tr>
+                  <td>Customer Name</td>
+                  <td>{databyid.customerName}</td>
+                </tr>
+                <tr>
+                  <td>Amount</td>
+                  <td>{databyid.amount}</td>
+                </tr>
+                <tr>
+                  <td>Sanction Date</td>
+                  <td>{databyid.sanctionDate.substring(0, 10)}</td>
+                </tr>
+                <tr>
+                  <td>Expiry Date</td>
+                  <td>{databyid.expiryDate.substring(0, 10)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>

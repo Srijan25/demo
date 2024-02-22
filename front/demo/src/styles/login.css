@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color:black;
+  background-position: center;
+  background-size: cover;
+}
+select{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #121212;
+  width: 100%;
+  height: 50px; 
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #191818;
+  width: 100%;
+  height: 50px; 
+}
+.filelabel{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0px;
+  color: #191818;
+  width: 100%;
+  height: 50px; 
+}
+option{
+  background:white;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #191818;
+  width: 100%;
+  height: 50px; 
+}
+section:before {
+  content: "";
+  background-color: #0009;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);                
+
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;                
+}
+
+.inputbox {
+  position: relative;
+  border-bottom: 2px solid #fff;
+  margin: 30px 0;
+  width: 310px;                
+}
+
+.inputbox label {
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+  position: absolute;
+  top: 50%;
+  left: 5px;                
+}
+
+input:focus~label,
+input:valid~label {
+  top: -5px;
+}
+
+.inputbox input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+  width: 100%;
+  height: 50px;               
+}
+
+.inputbox ion-icon {
+  font-size: 1.2em;
+  position: absolute;
+  right: 8px;
+  color: #fff;                
+  top: 20px;
+}
+
+.forget {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+  font-size: .9em;                
+}
+
+.forget label {
+  color: #fff;
+}
+
+.forget label input {
+  margin-right: 3px;
+
+}
+
+.forget label a,
+.forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.forget label a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.register {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+/* 
+::selection{
+  background: #4158d0;
+  color: #fff;
+} */
+.login-content{
+  display: flex;
+}
+.formcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:30px;
+}
+
+.role{
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    margin:10px;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+/* .wrapper {
+  background-color: #d1e7de;
+} */
+.wrapper{
+  /* background: #e6e6e6ba; */
+  background: white;
+  margin:10px 100px;
+  padding: 0;
+  height:32em;
+  border-radius: 5px;
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #0c0c0c;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+  position: initial;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.loginform{
+    position: relative;
+    top: -100px;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.logingif{
+  height: 450px;
+  width: 500px;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+ @media  screen and (max-width: 1000px){
+  .login-content{
+    flex-direction: column;
+  }
+  .login-content .form{
+    width: 100%;
+  }
+   .formcont
+    {
+        display: grid;
+    }
+} 
+
